@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "741452663279",
+    "firebase_url": "https://be-hoc-chu-8058a.firebaseio.com",
+    "project_id": "be-hoc-chu-8058a",
+    "storage_bucket": "be-hoc-chu-8058a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:741452663279:android:b1f2c389cc562a30",
+        "android_client_info": {
+          "package_name": "com.v2.two.behocchu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "741452663279-cq0g4ekck660odos08ub5k8u2l3pqud5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.v2.two.behocchu",
+            "certificate_hash": "a4a8de86823066addba3c8379ecc22cc2c2c0a6b"
+          }
+        },
+        {
+          "client_id": "741452663279-4gqotf3fl3hn1rhorg60115t3oe3u8kq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtatkmyeb_gpM4SO5sFJyJxMCooHUkllQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "741452663279-4gqotf3fl3hn1rhorg60115t3oe3u8kq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -24,6 +24,10 @@
         <activity android:name=".view.activity.TapVietActivity"/>
 
         <activity android:name=".view.activity.GiaiTriActivity"/>
+
+        <activity android:name=".view.activity.ListVideoActivity"/>
+
+        <activity android:name=".view.activity.PlayVideoActivity"/>
     </application>
 
 </manifest>

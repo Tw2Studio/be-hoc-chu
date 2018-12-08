@@ -9,6 +9,8 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.Display;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.google.firebase.database.ChildEventListener;
@@ -24,11 +26,13 @@ import com.v2.two.behocchu.model.Utility;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TapDocActivity extends AppCompatActivity {
+public class TapDocActivity extends AppCompatActivity implements View.OnClickListener {
     private List<ChuCai> list;
     private RecyclerView recyclerView;
     private ChuCaiAdapter adapter;
     private DatabaseReference mReference;
+    private ImageView btnLock;
+    private boolean isLock = false;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -90,5 +94,28 @@ public class TapDocActivity extends AppCompatActivity {
         int mNoOfColumns = Utility.calculateNoOfColumns(getApplicationContext());
         GridLayoutManager manager = new GridLayoutManager(this, mNoOfColumns+1, GridLayoutManager.VERTICAL, false);
         recyclerView.setLayoutManager(manager);
+
+        findViewById(R.id.btn_back).setOnClickListener(this);
+        btnLock = (ImageView)  findViewById(R.id.btn_lock);
+        btnLock.setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.btn_back:
+                onBackPressed();
+                break;
+            case R.id.btn_lock:
+                if (isLock){
+                    btnLock.setImageResource(R.drawable.ic_unlock);
+                    recyclerView.setEnabled(true);
+                } else {
+                    btnLock.setImageResource(R.drawable.ic_lock);
+                    recyclerView.setEnabled(false);
+                }
+                isLock = !isLock;
+                break;
+        }
     }
 }

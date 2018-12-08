@@ -3,11 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:padding="16dp"
+    android:padding="10dp"
     android:gravity="center"
     android:layout_gravity="center"
     android:id="@+id/linear_abc"
-    android:layout_margin="16dp"
+    android:layout_margin="8dp"
     android:layout_height="160dp">
 
     <ImageView

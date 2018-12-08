@@ -34,22 +34,6 @@
                 android:layout_height="match_parent"
                 android:layout_margin="16dp"
                 android:layout_weight="1"
-                android:orientation="vertical"
-                android:padding="16dp">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:src="@drawable/abc" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_margin="16dp"
-                android:layout_weight="1"
                 android:background="@drawable/bg_button_home"
                 android:orientation="vertical"
                 android:id="@+id/btn_tap_doc"
@@ -67,7 +51,34 @@
                     android:layout_gravity="center"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="Bé tập đọc"
+                    android:text="Bé học chữ"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_button_home"
+                android:orientation="vertical"
+                android:id="@+id/btn_tap_doc_so"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:src="@drawable/hocso" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Bé học số"
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -102,7 +113,7 @@
                     android:layout_gravity="center"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="Bé tập viết"
+                    android:text="Bé học vẽ"
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -129,7 +140,7 @@
                     android:layout_gravity="center"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="Học chữ cái"
+                    android:text="Góc giải trí"
                     android:textStyle="bold" />
 
             </LinearLayout>

@@ -4,11 +4,38 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <TableRow android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#1e88e5">
+
+        <ImageView
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:padding="16dp"
+            android:id="@+id/btn_back"
+            android:src="@drawable/ic_back"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="?attr/actionBarSize"
+            android:padding="16dp"
+            android:layout_weight="1"/>
+        <ImageView
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:padding="16dp"
+            android:id="@+id/btn_lock"
+            android:src="@drawable/ic_unlock"/>
+
+
+    </TableRow>
+
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center"
+        android:padding="8dp"
         android:id="@+id/recycle_abc">
+
 
     </android.support.v7.widget.RecyclerView>
 

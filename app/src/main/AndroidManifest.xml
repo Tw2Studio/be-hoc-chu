@@ -22,6 +22,8 @@
         <activity android:name=".view.activity.TapDocActivity"/>
 
         <activity android:name=".view.activity.TapVietActivity"/>
+
+        <activity android:name=".view.activity.GiaiTriActivity"/>
     </application>
 
 </manifest>

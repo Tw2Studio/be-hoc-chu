@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void initView() {
         findViewById(R.id.btn_tap_doc).setOnClickListener(this);
         findViewById(R.id.btn_tap_viet).setOnClickListener(this);
+        findViewById(R.id.btn_giai_tri).setOnClickListener(this);
     }
 
     @Override
@@ -33,6 +34,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent1);
                 break;
             case R.id.btn_giai_tri:
+                Intent intent2 = new Intent(MainActivity.this, GiaiTriActivity.class);
+                startActivity(intent2);
                 break;
 
         }

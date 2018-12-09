@@ -19,15 +19,17 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".view.activity.TapDocActivity"/>
+        <activity android:name=".view.activity.HocChuActivity"/>
 
-        <activity android:name=".view.activity.TapVietActivity"/>
+        <activity android:name=".view.activity.HocVeActivity"/>
 
         <activity android:name=".view.activity.GiaiTriActivity"/>
 
         <activity android:name=".view.activity.ListVideoActivity"/>
 
         <activity android:name=".view.activity.PlayVideoActivity"/>
+
+        <activity android:name=".view.activity.HocSoActivity"/>
     </application>
 
 </manifest>

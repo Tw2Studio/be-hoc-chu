@@ -20,23 +20,29 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_tap_doc).setOnClickListener(this);
         findViewById(R.id.btn_tap_viet).setOnClickListener(this);
         findViewById(R.id.btn_giai_tri).setOnClickListener(this);
+        findViewById(R.id.btn_tap_doc_so).setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btn_tap_doc:
-                Intent intent = new Intent(MainActivity.this, TapDocActivity.class);
+                Intent intent = new Intent(MainActivity.this, HocChuActivity.class);
                 startActivity(intent);
                 break;
             case R.id.btn_tap_viet:
-                Intent intent1 = new Intent(MainActivity.this, TapVietActivity.class);
+                Intent intent1 = new Intent(MainActivity.this, HocVeActivity.class);
                 startActivity(intent1);
                 break;
             case R.id.btn_giai_tri:
                 Intent intent2 = new Intent(MainActivity.this, GiaiTriActivity.class);
                 startActivity(intent2);
                 break;
+            case R.id.btn_tap_doc_so:
+                Intent intent3 = new Intent(MainActivity.this, HocSoActivity.class);
+                startActivity(intent3);
+                break;
+
 
         }
     }

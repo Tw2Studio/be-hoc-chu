@@ -26,7 +26,7 @@ public class VideoAdapter extends RecyclerView.Adapter<VideoAdapter.MyViewHolder
     private Context context;
 
     public static class MyViewHolder extends RecyclerView.ViewHolder {
-        public TextView tvName, tvVitri;
+        public TextView tvName;
         private ImageView imageView;
         private LinearLayout linearLayout;
 
@@ -55,13 +55,15 @@ public class VideoAdapter extends RecyclerView.Adapter<VideoAdapter.MyViewHolder
 
     @Override
     public void onBindViewHolder(VideoAdapter.MyViewHolder holder, int position) {
-        Video video = list.get(position);
+        final Video video = list.get(position);
         holder.tvName.setText(video.getName());
         Picasso.get().load(video.getImage()).into(holder.imageView);
         holder.linearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(context, PlayVideoActivity.class);
+                intent.putExtra("ID_VIDEO", video.getIdVideo());
+                context.startActivity(intent);
             }
         });
     }

@@ -5,6 +5,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <TableRow android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#1e88e5">
+
+        <ImageView
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:padding="16dp"
+            android:id="@+id/btn_back"
+            android:src="@drawable/ic_back"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="?attr/actionBarSize"
+            android:padding="16dp"
+            android:layout_weight="1"/>
+    </TableRow>
+
     <com.byox.drawview.views.DrawView
         android:id="@+id/draw_view"
         android:layout_width="match_parent"

@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent);
                 break;
             case R.id.btn_tap_viet:
-                Intent intent1 = new Intent(MainActivity.this, HocVeActivity.class);
+                Intent intent1 = new Intent(MainActivity.this, DoiSongActivity.class);
                 startActivity(intent1);
                 break;
             case R.id.btn_giai_tri:

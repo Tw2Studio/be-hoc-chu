@@ -11,7 +11,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".view.activity.MainActivity">
+        <activity android:name=".view.activity.MainActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".view.activity.SplashScreenActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashscreenTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,13 +30,24 @@
 
         <activity android:name=".view.activity.HocVeActivity"/>
 
-        <activity android:name=".view.activity.GiaiTriActivity"/>
+        <activity android:name=".view.activity.GiaiTriActivity"
+            android:screenOrientation="portrait"/>
 
-        <activity android:name=".view.activity.ListVideoActivity"/>
+        <activity android:name=".view.activity.ListVideoActivity"
+            android:screenOrientation="portrait"/>
 
-        <activity android:name=".view.activity.PlayVideoActivity"/>
+        <activity android:name=".view.activity.PlayVideoActivity"
+            android:screenOrientation="portrait"/>
 
         <activity android:name=".view.activity.HocSoActivity"/>
+
+        <activity android:name=".view.activity.DoiSongActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".view.activity.ChiTietDoiSongActivity"
+            android:screenOrientation="portrait"/>
+
+
     </application>
 
 </manifest>
